@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nominas</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="loader">
+        <h1>Nomina Trabajador</h1>
+        <h2>Ingresa tus datos</h2>
+
+        <form id="formNomina">
+            <label for="documento">Documento:</label>
+            <input
+                class="control"
+                type="number"
+                name="documento"
+                id="documento"
+                required
+            /><br />
+
+            <label for="nombre">Nombre:</label>
+            <input
+                class="control"
+                type="text"
+                name="nombre"
+                id="nombre"
+                required
+            /><br />
+
+            <label for="cuenta">Número De Cuenta:</label>
+            <input
+                class="control"
+                type="text"
+                name="cuenta"
+                id="cuenta"
+                required
+            /><br />
+
+            <label for="diasT">Días Trabajados:</label>
+            <input
+                class="control"
+                type="number"
+                name="diasT"
+                id="diasT"
+                required
+            /><br />
+
+            <label for="extrasD">Horas Extras Diurnas:</label>
+            <input
+                class="control"
+                type="number"
+                name="extrasD"
+                id="extrasD"
+                required
+            /><br />
+
+            <label for="extrasN">Horas Extras Nocturnas:</label>
+            <input
+                class="control"
+                type="number"
+                name="extrasN"
+                id="extrasN"
+                required
+            /><br /><br />
+
+            <button class="btn" type="submit" id="btnCalcular">
+                Calcular Salario
+            </button>
+        </form>
+        </div>
+        <div id="resultado"></div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
