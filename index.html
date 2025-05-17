@@ -8,70 +8,89 @@
     </head>
     <body>
         <div id="loader">
-        <h1>Nomina Trabajador</h1>
-        <h2>Ingresa tus datos</h2>
+            <h1>Nomina Trabajador</h1>
+            <h2>Ingresa tus datos</h2>
 
-        <form id="formNomina">
-            <label for="documento">Documento:</label>
-            <input
-                class="control"
-                type="number"
-                name="documento"
-                id="documento"
-                required
-            /><br />
+            <form id="formNomina">
+                <label for="documento">Documento:</label>
+                <input
+                    class="control"
+                    type="number"
+                    name="documento"
+                    id="documento"
+                    required
+                /><br />
 
-            <label for="nombre">Nombre:</label>
-            <input
-                class="control"
-                type="text"
-                name="nombre"
-                id="nombre"
-                required
-            /><br />
+                <label for="nombre">Nombre:</label>
+                <input
+                    class="control"
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    required
+                /><br />
 
-            <label for="cuenta">Número De Cuenta:</label>
-            <input
-                class="control"
-                type="text"
-                name="cuenta"
-                id="cuenta"
-                required
-            /><br />
+                <label for="cuenta">Número De Cuenta:</label>
+                <input
+                    class="control"
+                    type="text"
+                    name="cuenta"
+                    id="cuenta"
+                    required
+                /><br />
 
-            <label for="diasT">Días Trabajados:</label>
-            <input
-                class="control"
-                type="number"
-                name="diasT"
-                id="diasT"
-                required
-            /><br />
+                <label for="diasT">Días Trabajados:</label>
+                <input
+                    class="control"
+                    type="number"
+                    name="diasT"
+                    id="diasT"
+                    required
+                /><br />
 
-            <label for="extrasD">Horas Extras Diurnas:</label>
-            <input
-                class="control"
-                type="number"
-                name="extrasD"
-                id="extrasD"
-                required
-            /><br />
+                <label for="extrasD">Horas Extras Diurnas:</label>
+                <input
+                    class="control"
+                    type="number"
+                    name="extrasD"
+                    id="extrasD"
+                    required
+                /><br />
 
-            <label for="extrasN">Horas Extras Nocturnas:</label>
-            <input
-                class="control"
-                type="number"
-                name="extrasN"
-                id="extrasN"
-                required
-            /><br /><br />
+                <label for="extrasN">Horas Extras Nocturnas:</label>
+                <input
+                    class="control"
+                    type="number"
+                    name="extrasN"
+                    id="extrasN"
+                    required
+                /><br /><br />
 
-            <button class="btn" type="submit" id="btnCalcular">
-                Calcular Salario
-            </button>
-        </form>
+                <button class="btn" type="button" id="btnCalcular">
+                    Calcular Salario
+                </button>
+            </form>
         </div>
-        <div id="resultado"></div>
+        <div id="resultado">
+            <div id="resultado">
+                <h2>Resumen del Trabajador</h2>
+                <p id="mensajeSalario"></p>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Documento</th>
+                            <th>Nombre</th>
+                            <th>Cuenta</th>
+                            <th>Días Trabajados</th>
+                            <th>Extras Diurnas</th>
+                            <th>Extras Nocturnas</th>
+                            <th>Salario Final</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla"></tbody>
+                </table>
+            </div>
+        </div>
 
         <script src="app.js"></script>
     </body>
